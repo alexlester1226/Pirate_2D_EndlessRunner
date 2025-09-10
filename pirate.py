@@ -35,40 +35,39 @@ MAGENTA = (255, 0, 255)
 # your FUNCTIONS go here
 def createImg():
     global sky, island, waterB
-
     for w in range(1, 15):
-        imgWhale = pygame.image.load(f'whale{w}.png')
+        imgWhale = pygame.image.load(f'images/whale{w}.png')
         # imgWhale = pygame.transform.scale(imgWhale, (136, 92))
         whale.append(pygame.transform.flip(imgWhale, True, False))
 
 
     for u in range(1, 9):
-        imgSword = pygame.image.load(f'Sword Idle 0{u}.png')
+        imgSword = pygame.image.load(f'images/Sword Idle 0{u}.png')
         imgSword = pygame.transform.scale(imgSword, (50, 50))
         sword.append(imgSword)
 
     for i in range(1, 6):
-        imgIdle = pygame.image.load(f'Pirate Idle 0{i}.png')
+        imgIdle = pygame.image.load(f'images/Pirate Idle 0{i}.png')
         imgIdle = pygame.transform.scale(imgIdle, (128, 80))
         pirateIdleR.append(imgIdle)
         pirateIdleL.append(pygame.transform.flip(imgIdle, True, False))
         shopPirateIdleR.append(pygame.transform.scale(imgIdle, (256, 160)))
 
     for c in range(1, 10):
-        imgIdle = pygame.image.load(f'Crab Idle 0{c}.png')
+        imgIdle = pygame.image.load(f'images/Crab Idle 0{c}.png')
         imgIdle = pygame.transform.scale(imgIdle, (128, 80))
         crabIdleL.append(imgIdle)
         crabIdleR.append(pygame.transform.flip(imgIdle, True, False))
         shopCrabIdleR.append(pygame.transform.scale(pygame.transform.flip(imgIdle, True, False), (256, 160)))
 
     for y in range(1, 9):
-        imgIdle = pygame.image.load(f'Star Idle 0{y}.png')
+        imgIdle = pygame.image.load(f'images/Star Idle 0{y}.png')
         imgIdle = pygame.transform.scale(imgIdle, (128, 80))
         starIdleL.append(imgIdle)
         starIdleR.append(pygame.transform.flip(imgIdle, True, False))
         shopStarIdleR.append(pygame.transform.scale(pygame.transform.flip(imgIdle, True, False), (256, 160)))
 
-        imgIdle = pygame.image.load(f'Shark Idle 0{y}.png')
+        imgIdle = pygame.image.load(f'images/Shark Idle 0{y}.png')
         imgIdle = pygame.transform.scale(imgIdle, (128, 80))
         sharkIdleL.append(imgIdle)
         sharkIdleR.append(pygame.transform.flip(imgIdle, True, False))
@@ -76,81 +75,81 @@ def createImg():
 
 
     for r in range(1, 7):
-        imgRun = pygame.image.load(f'Pirate Run 0{r}.png')
+        imgRun = pygame.image.load(f'images/Pirate Run 0{r}.png')
         imgRun = pygame.transform.scale(imgRun, (128, 80))
         pirateRunR.append(imgRun)
         pirateRunL.append(pygame.transform.flip(imgRun, True, False))
 
-        imgRun = pygame.image.load(f'Crab Run 0{r}.png')
+        imgRun = pygame.image.load(f'images/Crab Run 0{r}.png')
         imgRun = pygame.transform.scale(imgRun, (128, 80))
         crabRunL.append(imgRun)
         crabRunR.append(pygame.transform.flip(imgRun, True, False))
 
-        imgRun = pygame.image.load(f'Star Run 0{r}.png')
+        imgRun = pygame.image.load(f'images/Star Run 0{r}.png')
         imgRun = pygame.transform.scale(imgRun, (128, 80))
         starRunL.append(imgRun)
         starRunR.append(pygame.transform.flip(imgRun, True, False))
 
-        imgRun = pygame.image.load(f'Shark Run 0{r}.png')
+        imgRun = pygame.image.load(f'images/Shark Run 0{r}.png')
         imgRun = pygame.transform.scale(imgRun, (128, 80))
         sharkRunL.append(imgRun)
         sharkRunR.append(pygame.transform.flip(imgRun, True, False))
     for k in range(1, 9):
-        keyImg = pygame.image.load(f'key 0{k}.png')
+        keyImg = pygame.image.load(f'images/key 0{k}.png')
         keyImg = pygame.transform.scale(keyImg, (50, 50))
         keys.append(keyImg)
 
     for z in range(1, 5):
-        windImg = pygame.image.load(f'wind{z}.png')
+        windImg = pygame.image.load(f'images/wind{z}.png')
         windImg = pygame.transform.scale(windImg, (91, 136))
         windR.append(windImg)
         windL.append(pygame.transform.flip(windImg, True, False))
 
-    sky = pygame.image.load('sky.png')
+    sky = pygame.image.load('images/sky.png')
     sky = pygame.transform.scale(sky, (800, 600))
-    island = pygame.image.load('island.png')
+    island = pygame.image.load('images/island.png')
     island = pygame.transform.scale(island, (1000, 500))
 
-    waterB = pygame.image.load('bWater.png')
+    waterB = pygame.image.load('images/bWater.png')
     waterB = pygame.transform.scale(waterB, (800, 50))
     for w in range(1, 5):
-        water = pygame.image.load(f'water{w}.png')
+        water = pygame.image.load(f'images/water{w}.png')
         water = pygame.transform.scale(water, (200, 50))
         waterTop.append(water)
     for b in range(1, 7):
-        boatImg = pygame.image.load(f'ship{b}.png')
+        boatImg = pygame.image.load(f'images/ship{b}.png')
         boatImg = pygame.transform.scale(boatImg, (260, 72))
         boatR.append(boatImg)
         boatL.append(pygame.transform.flip(boatImg, True, False))
 
     for e in range(1, 5):
-        birdImg = pygame.image.load(f'bird-{e} (dragged).tiff')
+        birdImg = pygame.image.load(f'images/bird-{e} (dragged).tiff')
         birdImg = pygame.transform.scale(birdImg, (57, 48))
         birdR.append(birdImg)
         birdL.append(pygame.transform.flip(birdImg, True, False))
 
     for d in range(1, 27):
-        letterImg = pygame.image.load(f'letter{d}.png')
+        letterImg = pygame.image.load(f'images/letter{d}.png')
         letterImg = pygame.transform.scale(letterImg, (20, 22))
         letter.append(letterImg)
 
     for y in range(0, 10):
-        numImg = pygame.image.load(f'num{y}.png')
+        numImg = pygame.image.load(f'images/num{y}.png')
         numImg = pygame.transform.scale(numImg, (20, 22))
         number.append(numImg)
 
     for b in range(1, 4):
-        navImg = pygame.image.load(f'nav{b}.png')
+        navImg = pygame.image.load(f'images/nav{b}.png')
         navImg = pygame.transform.scale(navImg, (60, 60))
         nav.append(navImg)
 
     for q in range(1, 9):
-        skullImg = pygame.image.load(f'skull0{q}.png')
+        skullImg = pygame.image.load(f'images/skull0{q}.png')
         skullImg = pygame.transform.scale(skullImg, (48, 56))
         skull.append(skullImg)
 
     for b in range(1, 10):
-        boardImg = pygame.image.load(f'board{b}.png')
+        boardImg = pygame.image.load(f'images/board{b}.png')
         boardImg = pygame.transform.scale(boardImg, (100, 100))
         if b < 4:
             board[0].append(boardImg)
@@ -160,17 +159,17 @@ def createImg():
             board[2].append(boardImg)
 
     for c in range(1, 5):
-        coinImg = pygame.image.load(f'coin{c}.png')
+        coinImg = pygame.image.load(f'images/coin{c}.png')
         coinImg = pygame.transform.scale(coinImg, (64, 64))
         coin.append(coinImg)
 
     for n in range(1, 4):
-        powerImg = pygame.image.load(f'powerBar{n}.png')
+        powerImg = pygame.image.load(f'images/powerBar{n}.png')
         powerImg = pygame.transform.scale(powerImg, (80, 80))
         powerBar.append(powerImg)
 
     for u in range(1, 4):
-        uptabImg = pygame.image.load(f'upTab{u}.png')
+        uptabImg = pygame.image.load(f'images/upTab{u}.png')
         uptabImg = pygame.transform.scale(uptabImg, (150, 110))
         upTab.append(uptabImg)
 
@@ -1758,9 +1757,9 @@ idleCounter = 0
 pirateIdleSwitch = 0
 crabIdleSwitch = 0
 sharkStarIdleSwitch = 0
-imgLock = pygame.image.load("lock.png")
+imgLock = pygame.image.load("images/lock.png")
 imgLock = pygame.transform.scale(imgLock, (100, 100))
-imgUnlock = pygame.image.load("unlock.png")
+imgUnlock = pygame.image.load("images/unlock.png")
 imgUnlock = pygame.transform.scale(imgUnlock, (100, 100))
 lockLocation = [[360, 20], [35, 320], [360, 320]]
 anchorLocation = [[100, 50], [500, 50], [100, 350], [500, 350]]
@@ -1772,7 +1771,7 @@ endLetters = []
 justClickedX = False
 power = False
 lengthColour = 0
-colourBar = pygame.image.load('colour.png')
+colourBar = pygame.image.load('images/colour.png')
 powerBar = []
 gameCoins = 0
 coin = []
@@ -1783,10 +1782,10 @@ addCoins = 3
 coinCounter = 1
 coinAmt = 0
 controlLetters = []
-backgroundMusic = pygame.mixer.Sound("pirateMusic.mp3")
+backgroundMusic = pygame.mixer.Sound("sounds/pirateMusic.mp3")
 backgroundMusic.play(-1)
-coinSound = pygame.mixer.Sound("coinSound.mp3")
-gameOverSound = pygame.mixer.Sound("gameOverSound.mp3")
+coinSound = pygame.mixer.Sound("sounds/coinSound.mp3")
+gameOverSound = pygame.mixer.Sound("sounds/gameOverSound.mp3")
 board = [[], [], []]
 skull = []
 skullX = [112, 660]
@@ -1823,7 +1822,7 @@ stay = []
 spawnCounter = 120
 speedBird = 1
 timeSwitch = 0
-spikes = pygame.image.load('Spikes.png')
+spikes = pygame.image.load('images/Spikes.png')
 dead = False
 onBoat = True
 boatDirection = 0
@@ -1852,7 +1851,7 @@ waterCounter = 0
 switchWater = 0
 switchBoat = 0
 boatCounter = 0
-imgPie = pygame.image.load('pie.tiff')
+imgPie = pygame.image.load('images/pie.tiff')
 imgPie = pygame.transform.scale(imgPie, (36, 38))
 runX = 0
 riseY = 0
@@ -1915,7 +1914,7 @@ displayShark = False
 displayStar = False
 numberX = [523, 545, 567]
 upTab = []
-imgAnchor = pygame.image.load('anchor.png')
+imgAnchor = pygame.image.load('images/anchor.png')
 imgAnchor = pygame.transform.scale(imgAnchor, (38, 36))
 player = 0
 keys = []
@@ -1925,7 +1924,7 @@ locationKey = [[1, 0], [0, 0]]
 locationAnchor = [[1, 0], [0, 0]]
 bDirect = 0
 swordSwitch = 0
-imgQuestionMark = pygame.image.load("QuestionMark.png")
+imgQuestionMark = pygame.image.load("images/QuestionMark.png")
 imgQuestionMark = pygame.transform.scale(imgQuestionMark, (150, 180))
 createImg()
 idleR = pirateIdleR
