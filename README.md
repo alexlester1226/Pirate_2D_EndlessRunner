@@ -14,16 +14,16 @@
 2. Install **Pygame** if you don’t have it already:
    ```bash
    pip install pygame
-   
+   ```
 3. Download or clone this repository:
   ```bash
   git clone <repository_url>
-
+   ```
 ## How to Play
 1. Run the game:
   ```bash
   python pirate.py
-
+   ```
 2. Or open the executable file (PIRATE.app for Apple Silicon)
 
 Avoid spikes and falling into water
