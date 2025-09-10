@@ -14,6 +14,7 @@
 2. Install **Pygame** if you don’t have it already:
    ```bash
    pip install pygame
+   
 3. Download or clone this repository:
   ```bash
   git clone <repository_url>
